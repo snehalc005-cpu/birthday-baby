@@ -1,0 +1,1610 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    background: #fff7f8;
+
+    color: #3d252b;
+
+    overflow-x: hidden;
+
+}
+
+
+/* =========================
+   SCREEN 1 — OPENING
+========================= */
+
+.opening {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(255, 210, 220, 0.7),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(245, 190, 205, 0.6),
+            transparent 30%
+        ),
+
+        #fff7f8;
+
+}
+
+
+.opening-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    animation: appear 1.5s ease;
+
+}
+
+
+.tiny-text {
+
+    font-family: Arial, sans-serif;
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
+    font-size: 11px;
+
+    color: #9b6873;
+
+    margin-bottom: 25px;
+
+}
+
+
+.opening h1 {
+
+    font-size:
+        clamp(70px, 12vw, 150px);
+
+    line-height: 0.85;
+
+    font-weight: normal;
+
+    letter-spacing: -5px;
+
+}
+
+
+.opening h1 span {
+
+    font-style: italic;
+
+    color: #a85b6a;
+
+}
+
+
+.intro {
+
+    max-width: 400px;
+
+    margin: 35px auto;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #7b6268;
+
+}
+
+
+/* =========================
+   OPEN BUTTON
+========================= */
+
+#openBtn {
+
+    border: 1px solid #c58b96;
+
+    background: transparent;
+
+    color: #7d4652;
+
+    padding: 15px 28px;
+
+    border-radius: 40px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.4s ease;
+
+}
+
+
+#openBtn span {
+
+    margin-left: 8px;
+
+}
+
+
+#openBtn:hover {
+
+    background: #a85b6a;
+
+    color: white;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.hearts span {
+
+    position: absolute;
+
+    color: #d995a2;
+
+    font-size: 25px;
+
+    opacity: 0.5;
+
+    animation:
+        float 6s infinite ease-in-out;
+
+}
+
+
+.hearts span:nth-child(1) {
+
+    left: 15%;
+    top: 20%;
+
+}
+
+
+.hearts span:nth-child(2) {
+
+    left: 80%;
+    top: 25%;
+
+    animation-delay: 1s;
+
+}
+
+
+.hearts span:nth-child(3) {
+
+    left: 25%;
+    top: 75%;
+
+    animation-delay: 2s;
+
+}
+
+
+.hearts span:nth-child(4) {
+
+    left: 70%;
+    top: 70%;
+
+    animation-delay: 3s;
+
+}
+
+
+.hearts span:nth-child(5) {
+
+    left: 50%;
+    top: 10%;
+
+    animation-delay: 4s;
+
+}
+
+
+/* =========================
+   SCREEN 2 — BIRTHDAY
+========================= */
+
+.birthday {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            #fff0f3,
+            #f8dce2,
+            #e9bdc7
+        );
+
+}
+
+
+/* Birthday content */
+
+.birthday-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    animation: birthdayAppear 1.5s ease;
+
+}
+
+
+.birthday-small {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+    color: #8f5c67;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* Main birthday heading */
+
+.birthday h2 {
+
+    font-size:
+        clamp(55px, 10vw, 120px);
+
+    line-height: 0.9;
+
+    letter-spacing: -4px;
+
+    font-weight: normal;
+
+    color: #4b2931;
+
+}
+
+
+.birthday h2 span {
+
+    font-style: italic;
+
+    color: #a64f63;
+
+}
+
+
+/* BABY */
+
+.baby-name {
+
+    margin-top: 30px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 8px;
+
+    color: #71434e;
+
+}
+
+
+/* Birthday message */
+
+.birthday-message {
+
+    max-width: 480px;
+
+    margin: 30px auto;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: #725c62;
+
+}
+
+
+/* Cake */
+
+.cake {
+
+    font-size: 65px;
+
+    margin: 20px 0;
+
+    animation:
+        cakeFloat 3s infinite ease-in-out;
+
+}
+
+
+/* Continue button */
+
+.continue-btn {
+
+    margin-top: 20px;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    border: 1px solid #b87b88;
+
+    background: rgba(255,255,255,0.4);
+
+    color: #74434e;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.continue-btn:hover {
+
+    background: #a85b6a;
+
+    color: white;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================
+   BIRTHDAY HEARTS
+========================= */
+
+.birthday-hearts span {
+
+    position: absolute;
+
+    color: rgba(255,255,255,0.8);
+
+    font-size: 40px;
+
+    animation:
+        birthdayFloat 7s infinite ease-in-out;
+
+}
+
+
+.birthday-hearts span:nth-child(1) {
+
+    left: 10%;
+
+    top: 20%;
+
+}
+
+
+.birthday-hearts span:nth-child(2) {
+
+    right: 12%;
+
+    top: 25%;
+
+    animation-delay: 1.5s;
+
+}
+
+
+.birthday-hearts span:nth-child(3) {
+
+    left: 18%;
+
+    bottom: 15%;
+
+    animation-delay: 3s;
+
+}
+
+
+.birthday-hearts span:nth-child(4) {
+
+    right: 20%;
+
+    bottom: 18%;
+
+    animation-delay: 4s;
+
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes appear {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+@keyframes birthdayAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            scale(0.95)
+            translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            scale(1)
+            translateY(0);
+
+    }
+
+}
+
+
+@keyframes float {
+
+    0% {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-25px)
+            rotate(10deg);
+
+    }
+
+    100% {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+    }
+
+}
+
+
+@keyframes birthdayFloat {
+
+    0% {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-35px)
+            rotate(15deg);
+
+    }
+
+    100% {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+    }
+
+}
+
+
+@keyframes cakeFloat {
+
+    0% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+
+    }
+
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .opening h1 {
+
+        letter-spacing: -3px;
+
+    }
+
+
+    .birthday h2 {
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .birthday-message {
+
+        padding: 0 15px;
+
+    }
+
+}
+
+/* =========================
+   SCREEN 3 — MEMORIES
+========================= */
+
+.memories {
+
+    min-height: 100vh;
+
+    padding: 130px 7%;
+
+    background: #fffafa;
+
+    position: relative;
+
+}
+
+
+/* HEADING */
+
+.memories-heading {
+
+    max-width: 700px;
+
+    margin: 0 auto 90px;
+
+    text-align: center;
+
+}
+
+
+.memory-small {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    color: #a06a75;
+
+    margin-bottom: 25px;
+
+}
+
+
+.memories h2 {
+
+    font-size:
+        clamp(50px, 8vw, 95px);
+
+    line-height: 0.9;
+
+    font-weight: normal;
+
+    letter-spacing: -4px;
+
+    color: #452a30;
+
+}
+
+
+.memories h2 span {
+
+    display: block;
+
+    font-style: italic;
+
+    color: #a55768;
+
+}
+
+
+.memory-intro {
+
+    max-width: 450px;
+
+    margin: 30px auto 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #806a70;
+
+}
+
+
+/* =========================
+   PHOTO GALLERY
+========================= */
+
+.photo-gallery {
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(12, 1fr);
+
+    grid-auto-rows: 90px;
+
+    gap: 25px;
+
+}
+
+
+/* ALL PHOTO CARDS */
+
+.photo-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #f1dfe3;
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(80, 40, 50, 0.10);
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+
+}
+
+
+.photo-card:hover {
+
+    transform:
+        translateY(-8px)
+        rotate(0deg);
+
+    box-shadow:
+        0 25px 55px
+        rgba(80, 40, 50, 0.18);
+
+}
+
+
+.photo-card img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.7s ease;
+
+}
+
+
+.photo-card:hover img {
+
+    transform: scale(1.05);
+
+}
+
+
+/* =========================
+   DIFFERENT PHOTO SIZES
+========================= */
+
+.photo-one {
+
+    grid-column: 1 / 5;
+
+    grid-row: 1 / 6;
+
+    transform: rotate(-2deg);
+
+}
+
+
+.photo-two {
+
+    grid-column: 5 / 9;
+
+    grid-row: 1 / 5;
+
+    transform: rotate(1deg);
+
+}
+
+
+.photo-three {
+
+    grid-column: 9 / 13;
+
+    grid-row: 1 / 6;
+
+    transform: rotate(2deg);
+
+}
+
+
+.couple-photo {
+
+    grid-column: 4 / 10;
+
+    grid-row: 6 / 13;
+
+    transform: rotate(-1deg);
+
+    border: 8px solid white;
+
+}
+
+
+.photo-four {
+
+    grid-column: 1 / 4;
+
+    grid-row: 7 / 12;
+
+    transform: rotate(2deg);
+
+}
+
+
+.photo-five {
+
+    grid-column: 10 / 13;
+
+    grid-row: 7 / 12;
+
+    transform: rotate(-2deg);
+
+}
+
+
+.photo-six {
+
+    grid-column: 1 / 5;
+
+    grid-row: 13 / 18;
+
+    transform: rotate(-1deg);
+
+}
+
+
+.photo-seven {
+
+    grid-column: 9 / 13;
+
+    grid-row: 13 / 18;
+
+    transform: rotate(2deg);
+
+}
+
+
+/* =========================
+   CAPTIONS
+========================= */
+
+.photo-caption {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    right: 0;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(40, 15, 20, 0.75)
+        );
+
+    color: white;
+
+    display: flex;
+
+    align-items: end;
+
+    gap: 10px;
+
+    opacity: 0;
+
+    transform: translateY(10px);
+
+    transition: 0.4s ease;
+
+}
+
+
+.photo-card:hover .photo-caption {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+.photo-caption span {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    opacity: 0.7;
+
+}
+
+
+.photo-caption p {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+
+}
+
+
+/* =========================
+   COUPLE PHOTO
+========================= */
+
+.couple-photo::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 12px;
+
+    border: 1px solid
+        rgba(255,255,255,0.7);
+
+    pointer-events: none;
+
+}
+
+
+.couple-label {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    text-align: center;
+
+    color: white;
+
+    opacity: 0;
+
+    transition: 0.5s ease;
+
+}
+
+
+.couple-photo:hover .couple-label {
+
+    opacity: 1;
+
+}
+
+
+.couple-label span {
+
+    display: block;
+
+    font-size: 35px;
+
+}
+
+
+.couple-label p {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 6px;
+
+    margin-top: 8px;
+
+}
+
+
+/* =========================
+   ENDING MESSAGE
+========================= */
+
+.memory-ending {
+
+    text-align: center;
+
+    margin-top: 100px;
+
+}
+
+
+.memory-ending p {
+
+    font-family: Arial, sans-serif;
+
+    color: #8b7076;
+
+    font-size: 13px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.memory-ending span {
+
+    font-size: 25px;
+
+    font-style: italic;
+
+    color: #9f5364;
+
+}
+
+
+/* =========================
+   MOBILE GALLERY
+========================= */
+
+@media (max-width: 700px) {
+
+    .memories {
+
+        padding: 100px 20px;
+
+    }
+
+
+    .photo-gallery {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 35px;
+
+    }
+
+
+    .photo-card {
+
+        width: 90%;
+
+        height: 380px;
+
+        margin: auto;
+
+        transform: none;
+
+    }
+
+
+    .couple-photo {
+
+        width: 100%;
+
+        height: 450px;
+
+    }
+
+
+    .photo-caption {
+
+        opacity: 1;
+
+        transform: none;
+
+    }
+
+
+    .couple-label {
+
+        opacity: 1;
+
+    }
+
+}
+
+/* =========================
+   SCREEN 4 - LOVE LETTER
+========================= */
+
+.letter-section {
+    min-height: 100vh;
+    background: #fdf5f6;
+    padding: 110px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.letter-content {
+    width: 100%;
+    max-width: 850px;
+}
+
+.letter-small {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #b77b86;
+    margin-bottom: 18px;
+}
+
+.letter-section h2 {
+    font-family: Georgia, serif;
+    font-size: 58px;
+    line-height: 1;
+    font-weight: 400;
+    color: #3d2930;
+    margin-bottom: 50px;
+}
+
+.letter-section h2 span {
+    color: #b86f7c;
+    font-style: italic;
+}
+
+.letter-card {
+    background: #fffafa;
+    max-width: 680px;
+    margin: auto;
+    padding: 60px 70px;
+    text-align: left;
+    border: 1px solid #ead5d9;
+    box-shadow: 0 20px 50px rgba(100, 50, 60, 0.10);
+    position: relative;
+}
+
+.letter-card::before {
+    content: "";
+    position: absolute;
+    inset: 12px;
+    border: 1px solid #f0dfe2;
+    pointer-events: none;
+}
+
+.letter-decoration {
+    text-align: center;
+    font-size: 30px;
+    color: #c47b88;
+    margin-bottom: 30px;
+}
+
+.letter-card p {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 1.9;
+    color: #59454b;
+    margin-bottom: 22px;
+}
+
+.letter-card p:first-of-type {
+    font-size: 22px;
+    color: #3d2930;
+    font-style: italic;
+}
+
+.letter-card .letter-final {
+    text-align: center;
+    color: #a95f6c;
+    font-style: italic;
+    font-size: 19px;
+    margin-top: 35px;
+}
+
+.letter-signature {
+    text-align: right;
+    font-family: Georgia, serif;
+    color: #6a5158;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-top: 35px;
+}
+
+.letter-signature span {
+    color: #a95f6c;
+    font-style: italic;
+}
+
+.letter-button {
+    margin-top: 45px;
+    padding: 15px 28px;
+    border: 1px solid #c98a95;
+    background: transparent;
+    color: #9e5c68;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.letter-button:hover {
+    background: #9e5c68;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .letter-section {
+        padding: 80px 18px;
+    }
+
+    .letter-section h2 {
+        font-size: 42px;
+        margin-bottom: 35px;
+    }
+
+    .letter-card {
+        padding: 45px 30px;
+    }
+
+    .letter-card p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .letter-signature {
+        font-size: 14px;
+    }
+
+}
+
+/* =========================
+   FINAL SURPRISE
+========================= */
+
+.final-section {
+    min-height: 100vh;
+    background: #3b252c;
+    color: #fff8f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 80px 20px;
+}
+
+.final-content {
+    max-width: 750px;
+    position: relative;
+    z-index: 2;
+}
+
+.final-small {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #dbaab3;
+    margin-bottom: 25px;
+}
+
+.final-section h2 {
+    font-family: Georgia, serif;
+    font-size: 65px;
+    line-height: 1;
+    font-weight: 400;
+    margin: 0 0 35px;
+}
+
+.final-section h2 span {
+    color: #e5a6b1;
+    font-style: italic;
+}
+
+.final-heart {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 35px;
+    border: 1px solid #d99aa6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e5a6b1;
+    font-size: 27px;
+    animation: finalHeartBeat 2s ease-in-out infinite;
+}
+
+.final-message {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ead9dc;
+}
+
+.final-divider {
+    margin: 35px 0;
+    color: #d99aa6;
+    letter-spacing: 5px;
+}
+
+.final-section h3 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.final-wish {
+    color: #d9c4c8;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.final-signature {
+    margin-top: 35px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #e5a6b1;
+}
+
+
+/* FLOATING HEARTS */
+
+.final-hearts span {
+    position: absolute;
+    color: rgba(229, 166, 177, 0.25);
+    font-size: 30px;
+    animation: finalFloat 8s ease-in-out infinite;
+}
+
+.final-hearts span:nth-child(1) {
+    left: 8%;
+    top: 15%;
+    animation-delay: 0s;
+}
+
+.final-hearts span:nth-child(2) {
+    left: 20%;
+    top: 70%;
+    animation-delay: 2s;
+}
+
+.final-hearts span:nth-child(3) {
+    left: 80%;
+    top: 20%;
+    animation-delay: 1s;
+}
+
+.final-hearts span:nth-child(4) {
+    left: 90%;
+    top: 65%;
+    animation-delay: 3s;
+}
+
+.final-hearts span:nth-child(5) {
+    left: 12%;
+    top: 45%;
+    animation-delay: 4s;
+}
+
+.final-hearts span:nth-child(6) {
+    left: 70%;
+    top: 80%;
+    animation-delay: 2.5s;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes finalHeartBeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+}
+
+@keyframes finalFloat {
+
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 0.2;
+    }
+
+    50% {
+        transform: translateY(-25px);
+        opacity: 0.6;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .final-section {
+        padding: 70px 25px;
+    }
+
+    .final-section h2 {
+        font-size: 45px;
+    }
+
+    .final-message {
+        font-size: 16px;
+    }
+
+    .final-section h3 {
+        font-size: 25px;
+    }
+
+}
+
+/* =========================
+   FINAL FONT SIZE FIX
+========================= */
+
+/* Opening Screen */
+.opening-content h1 {
+    font-size: 72px;
+}
+
+.opening-content .intro {
+    font-size: 18px;
+}
+
+.opening-content .tiny {
+    font-size: 13px;
+}
+
+/* Birthday Screen */
+.birthday h2 {
+    font-size: 72px;
+}
+
+.birthday .birthday-name {
+    font-size: 25px;
+}
+
+.birthday .birthday-message {
+    font-size: 18px;
+}
+
+/* Memories Screen */
+.memories h2 {
+    font-size: 60px;
+}
+
+.memories .memories-intro {
+    font-size: 17px;
+}
+
+.memory-ending {
+    font-size: 20px;
+}
+
+/* Letter Screen */
+.letter-small {
+    font-size: 13px;
+}
+
+.letter-section h2 {
+    font-size: 64px;
+}
+
+.letter-card p {
+    font-size: 18px;
+}
+
+.letter-card p:first-of-type {
+    font-size: 24px;
+}
+
+/* Final Screen */
+.final-small {
+    font-size: 13px;
+}
+
+.final-section h2 {
+    font-size: 68px;
+}
+
+.final-message {
+    font-size: 19px;
+}
+
+.final-section h3 {
+    font-size: 32px;
+}
+
+/* =========================
+   LETTER CONTINUE BUTTON FIX
+========================= */
+
+.letter-button {
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+
+    margin-top: 50px;
+    padding: 17px 34px;
+
+    background: #9e5c68;
+    color: white;
+
+    border: none;
+    border-radius: 30px;
+
+    font-family: Georgia, serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 25px rgba(100, 50, 60, 0.15);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.letter-button:hover {
+    transform: translateY(-4px);
+    background: #874d59;
+    box-shadow: 0 15px 30px rgba(100, 50, 60, 0.22);
+}
+
+.letter-button span {
+    font-size: 20px;
+    margin-left: 5px;
+}
